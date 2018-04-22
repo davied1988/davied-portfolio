@@ -1,0 +1,578 @@
+:root {
+    --main-bg-color: #f4f4f4;
+    --dark-color: #5b5454;
+    --button: #ff7b00;
+}
+
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+}
+/* Global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.button_1 {
+    background-color: var(--button);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button_1:hover {
+    background-color: #ef7409;
+}
+
+.dark {
+    padding: 15px 15px 25px 15px;
+    background-color: var(--dark-color);
+    color: white;
+    font-weight: bold;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+/* Header */
+header {
+    background-color: var(--dark-color);
+    color: white;
+    padding-top: 8px;
+    min-height: 50px;
+    border-bottom: var(--button) 1px solid;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: #ccc;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+    color: #ccc;
+    text-shadow: 2px 2px 8px black;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.section-header {
+    background-color: var(--dark-color);
+    color: white;
+    padding-top: 8px;
+    min-height: 50px;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px 0;
+    line-height: 2.3;
+}
+
+/* Image Slider */
+#slider h5 {
+    text-shadow: 3px 3px 4px var(--dark-color);
+}
+
+/* Showcase */
+#showcase {
+    min-height: 60vh;
+    background: url('../img/my-showcase.jpeg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+    opacity: .5;
+}
+
+/* Newsletter */
+#newsletter {
+    padding: 15px;
+    color: #fff;
+    background: var(--dark-color);
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+#newsletter h1 {
+    text-align: center;
+    margin: 0;
+}
+
+#newsletter form {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#newsletter input[type="email"],
+#form input[type="text"],
+#form input[type="password"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/*  Technologies I know */
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes header {
+    margin-bottom: 30px;
+}
+
+#boxes h1,
+.title {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #e6e6e6;
+}
+
+#boxes .box {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+#boxes .box img {
+    width: 90px;
+    box-shadow: 4px 4px 30px #000;
+}
+
+/* Sidebar */
+aside#sidebar {
+    width: 30%;
+    float: right;
+}
+
+aside#sidebar h2 {
+    margin: 5px auto;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+    width: 90%;
+    padding: 10px;
+}
+
+.aside-quote {
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+/* Main-col */
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+/* Services */
+ul#services li {
+    list-style: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    background: #e6e6e6;
+    border-radius: 15px;
+}
+
+.landing-inner {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.landing h1 {
+    font-size: 50px;
+    margin: 0;
+    color: var(--dark-color);
+}
+
+.landing p {
+    font-size: 2em;
+    color: var(--dark-color);
+}
+
+.countdown {
+    font-size: 3.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.countdown div {
+    padding: 20px;
+    border: 2px solid var(--dark-color);
+    border-radius: 20px;
+    margin: 5px;
+    background: var(--dark-color);
+    color: white;
+}
+
+.countdown div:first-child {
+    background: var(--button);
+}
+
+.countdown span {
+    display: block;
+    font-size: 25px;
+}
+
+#form {
+    background-color: var(--dark-color);
+    margin: 0 auto;
+    width: 35%;
+    margin: 50px auto;
+    padding: 15px;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 15px;
+}
+
+#form h2 {
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+#form form {
+    text-align: center;
+}
+
+#form form label {
+    text-align: left;
+}
+
+textarea,
+form input[type='email'],
+form input[type='text'],
+form input[type='password'] {
+    color: #000;
+    font-weight: bolder;
+    border-radius: 12px;
+    background-color: #ccc;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+input[type='submit'] {
+    background-color: var(--button);
+    color: #ccc;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-top: 18px;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+input#username {
+    margin-bottom: 0;
+}
+
+.almost-full-width {
+    width: 95%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+#feedback {
+    background-image: url('../images/warning.png');
+    background-repeat: no-repeat;
+    background-position: 2px 14px;
+    padding: 10px 0 0 22px;
+}
+
+#feedback.warning {
+    background-image: url('../img/warning.png');
+}
+#feedback.tip {
+    background-image: url('../img/tip.png');
+}
+
+#slider, 
+.wrap, 
+.slide-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 91vh;
+    overflow-x: hidden;
+}
+
+.wrap {
+    position: relative; 
+}
+/* Slides */
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1 {background-image: url('../img/image11.jpg');}
+.slide2 {background-image: url('../img/image22.jpeg');}
+.slide3 {background-image: url('../img/image33.jpg');}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-content span {
+    font-size: 5rem;
+    color: white;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left {
+    border-width: 30px 40px 30px 0;
+    left: 0;
+    margin-left: 30px;
+    border-color: transparent #fff transparent transparent;
+}
+
+#arrow-left:hover {
+    border-color: transparent var(--button) transparent transparent;
+}
+
+#arrow-right {
+    border-width: 30px 0 30px 40px;
+    right: 0;
+    margin-right: 50px;
+    border-color: transparent transparent transparent #fff;
+}
+
+#arrow-right:hover {
+    border-color: transparent transparent transparent var(--button);
+}
+
+/*PHOTOS*/
+.img-1 {background-image: url('https://images.pexels.com/photos/20787/pexels-photo.jpg?h=350&auto=compress&cs=tinysrgb');}
+.img-2 {background-image: url('../img/image4.jpeg');}
+.img-3 {background-image: url('https://images.pexels.com/photos/819105/pexels-photo-819105.jpeg?h=350&auto=compress&cs=tinysrgb');}
+.img-6 {background-image: url('https://images.pexels.com/photos/89699/pexels-photo-89699.jpeg?h=350&auto=compress&cs=tinysrgb');}
+.img-9 {background-image: url('../img/image1.jpeg');}
+.img-12 {background-image: url('https://images.pexels.com/photos/128817/pexels-photo-128817.jpeg?h=350&auto=compress&cs=tinysrgb');}
+.img-13 {background-image: url('../img/image3.jpeg');}
+
+.item {
+  height: 330px;
+  margin: 10px;
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+  opacity: .75;
+}
+
+.item:hover {
+    opacity: 1;
+    cursor: pointer;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    cursor: pointer;
+    border: 4px solid #333;
+}
+
+.inside-container,
+.flex-column,
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.dark {
+    margin: 15px 0;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.equal {
+  flex: 1;
+}
+
+/* Get Quote */
+main header {
+    text-align: center;
+}
+
+main div h2,
+main div h3 {
+    color: var(--dark-color);
+}
+
+footer {
+    padding: 1px;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 1.7rem;
+    background-color: var(--button);
+    text-align: center;
+    letter-spacing: 4px;
+    border-radius: 25px 25px 0 0;
+}
+
+footer p {
+    margin: 10px 0;
+    text-shadow: 1px 1px 1px var(--dark-color);
+}
+
+/* Media querries */
+@media (max-width: 1150px) {
+    header #branding,
+    header nav,
+    header nav li {
+        text-align: center;
+        width: 100%;
+    }
+    .aside-quote .quote {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 970px) {
+    #slider h5 {
+        font-size: .6em;
+    }
+    #form {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header {
+        padding-bottom: 20px;
+    }
+    #showcase h1 {
+        margin-top: 40px;
+    }
+    #newsletter {
+        width: 100%;
+    }
+    #newsletter button,
+    .quote button {
+        display: block;
+        width: 100%;
+    }
+    #newsletter form input[type="email"],
+    .quote input,
+    .quote textarea {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    #slider h5 {
+        font-size: .25em;
+    }
+    .landing img {
+        width: 70%;
+    }
+    .landing h1 {
+        font-size: 40px;
+    }
+    .countdown {
+        font-size: 30px;
+        flex-direction: column;
+    }
+    .countdown div {
+        display: none;
+    }
+    .countdown div:first-child {
+        display: block;
+        width: 40%;
+        padding: 10px;
+    }
+    #form {
+        width: 60%;
+    }
+    .flex-gallery div {
+        display: block;
+    }
+    .item {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 526px) {
+    #form {
+        width: 80%;
+    }
+    .aside-quote .quote {
+        font-size: 20px;
+    }
+    .aside-quote .author {
+        font-size: 15px;
+    }
+    #slider h5 {
+        display: none;
+    }
+}
+
